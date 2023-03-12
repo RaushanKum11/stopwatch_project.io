@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>StopWatch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="indec.css">
+    </head>
+    <body>
+       <div id="container">
+        <div id="watch">
+            <div id="outercircle" class="bg" >
+                 <div id="innercircle">
+                    <span id="minute" class="time ">00</span> &nbsp; : &nbsp;
+                    <span id="second"class="time ">00</span> &nbsp; 
+                    <span id="millisecond" class="time ">0</span>
+                 </div>
+            </div>
+          <div id="button-container">
+            <button id="reset" value="1" class="btn">Reset</button>
+            <button id="start" value="2" class="btn">Start</button>
+            <button id="stop" value="3" class="btn">Lap</button>
+          </div>
+
+        </div>
+        
+        <div id="laps">
+            <ol id="orderedList">
+              
+            </ol>
+        </div>
+
+            <button value="4" class="btn clear">Clear Laps</button>
+    
+
+       </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

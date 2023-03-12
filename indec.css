@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;   
+}
+#container{
+    height: calc(100vh - 16px);
+}
+
+#outercircle{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.bg{
+    background-image: linear-gradient(red,blue);
+}
+.animation-bg{
+    background: linear-gradient(-45deg,rgb(27, 66, 238),rgb(255, 30, 0),rgb(187, 70, 90),cyan);
+    background-size:200% 200% ;
+    animation: gradient 1s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+#innercircle{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#minute{
+    font-size: 43px;
+}
+#second{
+    font-size: 32px;
+}
+#millisecond{
+    padding-top: 4%;
+    font-size: 18px; 
+}
+#button-container{
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.btn{
+    font-size: 1.2rem;
+    background-color: inherit;
+    color: white;
+    border: 2px solid inherit;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-weight: 800;
+    border: 1px solid black;
+    background-image: linear-gradient(rgb(206, 168, 168), rgb(0, 132, 255));
+}
+.btn:hover{
+    background-image: linear-gradient(rgb(199, 61, 61), rgb(62, 62, 173));
+        color: rgb(255, 255, 255);
+       cursor: pointer;
+       transform: scale(1.2);
+}
+
+#laps {
+    height: 200px;
+    overflow:auto;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+li{
+    padding: 5px;
+    background-color: inherit;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: -20px;
+    background-image:radial-gradient(rgb(34, 196, 174),
+     rgb(26, 63, 230));
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    
+}
+li:hover{
+    transform: scale(1.2);
+}
+.clear{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-left: 38%;
+}
